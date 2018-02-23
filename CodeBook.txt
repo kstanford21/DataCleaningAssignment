@@ -1,0 +1,132 @@
+Original data are from the Human Activity Recognition Using Smartphones Dataset (Version 1.0)
+	Source Data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+Original data were downloazed then unzipped using mictosoft windows 10.  Further information on this dataset is available in the README file contained in the downloaded .zip file.
+
+For these analysis, averaged testing and training data from this dataset were used (X_train.txt and X_test.txt).  Information on the mean and standard deviation were extracted and a summary table constructed for each participant over each activity for each movement measure.
+
+mean_SD_data contains the mean and standard deviation information from the original dataset.
+
+Column names (mean_SD_data) corresponding gyroscope and accelarometer readings during eachf activity are as follows:
+
+Files
+run_analysis.R
+	r script used for the analysis
+
+other files
+	from the original dataset (see original readme below)
+
+
+#data generated in run_analysis.R
+mean_SD_data
+	 contains the mean and standard deviation information from the original dataset.
+
+SummaryMeans
+	Contains the mean of each column (movement standard deviation and mean) for each subject and activity (6 trials)
+	Column names and factor names are the same as for the mean_SD_data table
+
+===================================================================
+
+Factor variables
+	Factor columns:
+		subjects
+			number of the subject performing the activity
+				subject1 through subject30
+
+		activity
+			name of activity being performed during measurements (six trials per subject)
+				WALKING
+           			WALKING_UPSTAIRS
+				WALKING_DOWNSTAIRS
+				SITTING            
+				STANDING         
+				LAYING
+
+	movement columns:
+		contain mean and standard deviation data for each movement from original dataset.
+			tBodyAccmeanX               
+			tBodyAccmeanY                
+			tBodyAccmeanZ                
+			tGravityAccmeanX            
+			tGravityAccmeanY             
+			tGravityAccmeanZ             
+			tBodyAccJerkmeanX           
+			tBodyAccJerkmeanY            
+			tBodyAccJerkmeanZ            
+			tBodyGyromeanX              
+			tBodyGyromeanY               
+			tBodyGyromeanZ               
+			tBodyGyroJerkmeanX          
+			tBodyGyroJerkmeanY           
+			tBodyGyroJerkmeanZ           
+			tBodyAccMagmean             
+			tGravityAccMagmean           
+			tBodyAccJerkMagmean          
+			tBodyGyroMagmean            
+			tBodyGyroJerkMagmean         
+			fBodyAccmeanX                
+			fBodyAccmeanY              
+			fBodyAccmeanZ                
+			fBodyAccmeanFreqX            
+			fBodyAccmeanFreqY          
+			fBodyAccmeanFreqZ            
+			fBodyAccJerkmeanX           
+			fBodyAccJerkmeanY          
+			fBodyAccJerkmeanZ            
+			fBodyAccJerkmeanFreqX        
+			fBodyAccJerkmeanFreqY      
+			fBodyAccJerkmeanFreqZ
+			fBodyGyromeanX
+			fBodyGyromeanY              
+			fBodyGyromeanZ
+			fBodyGyromeanFreqX           
+			fBodyGyromeanFreqY          
+			fBodyGyromeanFreqZ           
+			fBodyAccMagmean             
+			fBodyAccMagmeanFreq         
+			fBodyBodyAccJerkMagmean      
+			fBodyBodyAccJerkMagmeanFreq  
+			fBodyBodyGyroMagmean        
+			fBodyBodyGyroMagmeanFreq     
+			fBodyBodyGyroJerkMagmean     
+			fBodyBodyGyroJerkMagmeanFreq
+			tBodyAccstdX                 
+			tBodyAccstdY                 
+			tBodyAccstdZ                
+			tGravityAccstdX             
+			tGravityAccstdY              
+			tGravityAccstdZ             
+			tBodyAccJerkstdX            
+			tBodyAccJerkstdY             
+			tBodyAccJerkstdZ            
+			tBodyGyrostdX                
+			tBodyGyrostdY                
+			tBodyGyrostdZ               
+			tBodyGyroJerkstdX            
+			tBodyGyroJerkstdY            
+			tBodyGyroJerkstdZ           
+			tBodyAccMagstd               
+			tGravityAccMagstd            
+			tBodyAccJerkMagstd          
+			tBodyGyroMagstd              
+			tBodyGyroJerkMagstd          
+			fBodyAccstdX                
+			fBodyAccstdY                 
+			fBodyAccstdZ                 
+			fBodyAccJerkstdX            
+			fBodyAccJerkstdY             
+			fBodyAccJerkstdZ             
+			fBodyGyrostdX               
+			fBodyGyrostdY                
+			fBodyGyrostdZ                
+			fBodyAccMagstd              
+			fBodyBodyAccJerkMagstd     
+			fBodyBodyGyroMagstd          
+			fBodyBodyGyroJerkMagstd  
+
+
+
+
+
+
+
